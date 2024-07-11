@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.heading{
+    text-align: center;
+}
+.button{
+    margin: 10px;
+    padding: 10px;
+}
