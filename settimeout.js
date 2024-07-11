@@ -27,5 +27,15 @@ const randomColor = function () {
   document.querySelector('#start').addEventListener('click', startChangingColor);
   
   document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+
+  setInterval(()=>{
+   let heading= document.querySelector("#heading")
+    heading.innerHTML="hey Nidhi is here"
+    console.log(heading.innerHTML)
+     
+  
+
+  },30000)
   
   

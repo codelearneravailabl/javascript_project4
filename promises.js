@@ -14,9 +14,19 @@ form.addEventListener("submit", (event) => {
     } else if (yourNumber !== targetNumber) {
         result.innerHTML = "Incorrect, try again!";
         console.log("Incorrect, try again!");
+        setTimeout(()=>{
+            let result_h= document.querySelector("#Result_heading")
+            result_h.innerHTML="umm you lost try again"
+            console.log(result_h.innerHTML)
+         },0)
     } else {
         result.innerHTML = "Congratulations, you guessed the correct number!";
         console.log("Congratulations, you guessed the correct number!");
+        setTimeout(()=>{
+           let result_h= document.querySelector("#Result_heading")
+           result_h.innerHTML="congratulations you won "
+           console.log(result_h.innerHTML)
+        },2000)
         endGame();
     }
 });
