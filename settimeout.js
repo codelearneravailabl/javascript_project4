@@ -28,6 +28,17 @@ const randomColor = function () {
   
   document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
+  let date = new Date()
+  console.log(date)
+   let h3 =document.querySelector("#heading23")
+   console.log(h3)
+   setInterval(()=>{
+    h3.innerHTML=new Date()
+    console.log(h3.innerHTML)
+
+   },1000)
+   
+
 
   setInterval(()=>{
    let heading= document.querySelector("#heading")
